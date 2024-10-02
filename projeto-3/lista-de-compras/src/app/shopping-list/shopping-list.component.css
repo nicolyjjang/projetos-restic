@@ -1,0 +1,87 @@
+.body{
+    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shopping-list{
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 1.5rem;
+    background: #fa9999;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
+button{
+    background: #ab4f4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: #8a3b3b;
+}
+
+input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.added-items{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    .shopping-list {
+        margin: 20px; 
+    }
+    button {
+        padding: 10px 30px;
+        margin-right: 10px;
+    }
+    input {
+        padding: 8px;
+    }
+    li {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .added-items {
+        padding: 5px; 
+    }
+}

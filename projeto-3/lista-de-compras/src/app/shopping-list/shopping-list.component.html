@@ -1,0 +1,21 @@
+<div class="shopping-list">
+    <h1>Lista de Compras</h1>
+    <input 
+        type="text" 
+        [(ngModel)]="newItem" 
+        placeholder="Adicione um item..." 
+    />
+    <button (click)="addItem()">Adicionar</button>
+
+    <ul>
+        <li *ngFor="let item of items">
+            <span [class.completed]="item.purchased">{{ item.name }}</span>
+            <div>
+                <button (click)="togglePurchased(item)">
+                    {{ item.purchased ? 'Não Comprado' : 'Comprado' }}
+                </button>
+                <button (click)="editItem(item)">Editar</button>
+                <button (click)="deleteItem(item)">Excluir</button>
+            </div>
+        </li>
+    </ul>
