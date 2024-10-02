@@ -1,4 +1,6 @@
-# Descrição 📜
+# Projeto: Calculadora
+
+## Descrição 📜
 Este projeto tem como objetivo desenvolver um protótipo visual de uma calculadora utilizando ferramentas de design como **Figma** ou **Adobe XD**.
 
 ## Especificações 📏

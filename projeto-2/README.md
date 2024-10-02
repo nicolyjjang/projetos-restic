@@ -1,4 +1,6 @@
-# Descrição 📜
+# Projeto: Saúde e Bem-estar
+
+## Descrição 📜
 Este projeto tem como objetivo criar um site sobre **saúde** e **cuidados pessoais**, com foco em fornecer informações úteis e ferramentas práticas para promover o bem-estar.
 
 ## Funcionalidades e Características do Site 📏
