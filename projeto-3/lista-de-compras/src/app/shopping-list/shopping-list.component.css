@@ -1,28 +1,29 @@
-.body{
+body {
     background: #f2f2f2;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.shopping-list{
+.shopping-list {
     max-width: 600px;
     margin: 60px auto;
     padding: 1.5rem;
     background: #fa9999;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1{
+h1 {
     text-align: center;
     color: #ffffff;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-li{
+li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,12 +33,12 @@ li{
     font-weight: 700;
 }
 
-.completed{
+.completed {
     text-decoration: line-through;
     color: grey;
 }
 
-button{
+button {
     background: #ab4f4f;
     color: white;
     border: none;
@@ -49,11 +50,11 @@ button{
     font-weight: 700;
 }
 
-button:hover{
+button:hover {
     background-color: #8a3b3b;
 }
 
-input{
+input {
     width: calc(100% - 20px);
     padding: 10px;
     border-radius: 4px;
@@ -61,27 +62,45 @@ input{
     margin-bottom: 10px;
 }
 
-.added-items{
+.added-items {
     margin-top: 20px;
     padding: 10px;
 }
 
-@media (max-width: 600px){
+.shopping-list {
+    max-width: 500px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
     .shopping-list {
-        margin: 20px; 
+        margin: 20px;
     }
+
     button {
         padding: 10px 30px;
         margin-right: 10px;
     }
+
     input {
         padding: 8px;
     }
+
     li {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
     }
+
     .added-items {
-        padding: 5px; 
+        padding: 5px;
     }
 }
