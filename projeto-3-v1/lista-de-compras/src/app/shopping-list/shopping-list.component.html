@@ -1,7 +1,7 @@
 <div class="shopping-list">
     <h2>Lista de Compras</h2>
 
-    <input [(ngModel)]="newItem" placeholder="Adicionar novo item"/>
+    <input [(ngModel)]="newItem" placeholder="Adicionar novo item" />
     <button (click)="addItem()">Adicionar</button>
 
     <h3>Itens não comprados</h3>
@@ -15,7 +15,7 @@
         </div>
       </li>
     </ul>
-    
+
     <h3>Itens comprados</h3>
     <ul>
       <li *ngFor="let item of getPurchasedItems()">
@@ -26,4 +26,5 @@
           <button (click)="deleteItem(item)">Excluir</button>
         </div>
       </li>
-    </ul>    
+    </ul>
+  </div>

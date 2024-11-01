@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CommonModule } from '@angular/common'; 
 
 import { ShoppingListComponent } from './shopping-list.component';
 
@@ -9,8 +8,7 @@ describe('ShoppingListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ShoppingListComponent], 
-      imports: [CommonModule] 
+      imports: [ShoppingListComponent]
     })
     .compileComponents();
 

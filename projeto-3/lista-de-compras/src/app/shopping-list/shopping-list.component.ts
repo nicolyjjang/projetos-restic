@@ -2,6 +2,11 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+interface Item {
+  name: string;
+  purchased: boolean;
+}
+
 @Component({
   selector: 'app-shopping-list',
   standalone: true,
@@ -11,30 +16,38 @@ import { CommonModule } from '@angular/common';
 })
 export class ShoppingListComponent {
   newItem: string = '';
-  items: { name: string; purchased: boolean }[] = [];
+  items: Item[] = [];
 
-  constructor(private cdr: ChangeDetectorRef) {} //injeta o ChangeDetectorRef, que forca a detecçao de mudanças
+  constructor(private cdr: ChangeDetectorRef) {}
 
   addItem() {
-    if (this.newItem.trim()) { // verifica espaços em branco, ou seja, se o item esta vazio
-      this.items.push({ name: this.newItem, purchased: false }); // add novo item no array
+    if (this.newItem.trim()) {
+      this.items.push({ name: this.newItem, purchased: false });
       this.newItem = '';
     }
   }
 
-  editItem(item: any) {
-    const newName = prompt("Editar item:", item.name); //pedi um novo nome
-    if (newName) { //caso seja fornecido,
-      item.name = newName; //ele atualiza o nome do item
-      this.cdr.detectChanges(); //força a mudança, garantindo que a interface seja atualizada
+  editItem(item: Item) {
+    const newName = prompt("Editar item:", item.name);
+    if (newName) {
+      item.name = newName;
+      this.cdr.detectChanges();
     }
   }
 
-  togglePurchased(item: any) {
-    item.purchased = !item.purchased; //alterna entre comprado e não comprado
+  togglePurchased(item: Item) {
+    item.purchased = !item.purchased;
   }
 
-  deleteItem(item: any) {
-    this.items = this.items.filter(i => i !== item); //filtra a lista para remover o item que o usuário quer tirar
+  deleteItem(item: Item) {
+    this.items = this.items.filter(i => i !== item);
+  }
+
+  getNotPurchasedItems(): Item[] {
+    return this.items.filter(item => !item.purchased);
+  }
+
+  getPurchasedItems(): Item[] {
+    return this.items.filter(item => item.purchased);
   }
 }
