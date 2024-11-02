@@ -1,0 +1,70 @@
+html, body {
+  height: 100%; 
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px; 
+  width: 400px; 
+  background-color: #BB945E; 
+  align-items: center;
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+.form-row {
+  display: flex; 
+  align-items: center; 
+  width: 100%; 
+  margin: 10px 0; 
+}
+
+label {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 18px;
+  width: 100px; 
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  height: 40px; 
+  flex-grow: 1; 
+  padding: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  font-size: 16px; 
+}
+
+.login-button {
+  background-color: #A07446; 
+  color: white; 
+  border: none;
+  padding: 12px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 800;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, transform 0.4s; 
+}
+
+.login-button:hover {
+  background-color: #805435; 
+  transform: translateY(-2px);
+}
+
+#buttonDiv {
+  margin-top: 30px; 
+  border-radius: 50px;
+  width: 400px;
+}
