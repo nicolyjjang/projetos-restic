@@ -7,27 +7,28 @@ Este projeto consiste em desenvolver uma aplicação web utilizando Angular que 
 
 1. Criação de Itens na Lista<br>
 O usuário poderá adicionar itens de forma rápida por meio de um campo de texto. Os itens são adicionados diretamente em uma lista interativa.
-[Itens criados](https://github.com/user-attachments/assets/b2a440f6-bbe4-4368-9258-bd7ee810a286)
+![Itens criados](https://github.com/user-attachments/assets/b2a440f6-bbe4-4368-9258-bd7ee810a286 | width=250)
 
-3. Edição de Itens<br>
+2. Edição de Itens<br>
 O usuário terá a opção de editar qualquer item da lista.
-[Editando item: luvas](https://github.com/user-attachments/assets/9235d7e9-e073-4ed6-8a2c-f0bccddd9f21)
-[Item luvas, renomeado como uvas](https://github.com/user-attachments/assets/91a90fd8-9c17-4cf0-b2d2-6206b18cf8e1)
+![Editando item: luvas](https://github.com/user-attachments/assets/9235d7e9-e073-4ed6-8a2c-f0bccddd9f21 | width=250)
+![Item luvas, renomeado como uvas](https://github.com/user-attachments/assets/91a90fd8-9c17-4cf0-b2d2-6206b18cf8e1 | width=250)
 
-4. Marcar como Comprado<br>
-O usuário poderá marcar itens como comprados, alterando a aparência visual do item (por exemplo, riscando o texto ou mudando a cor)
+3. Marcar como Comprado<br>
+O usuário poderá marcar itens como comprados, alterando a aparência visual do item (por exemplo, riscando o texto ou mudando a cor).
 
-6. Agrupamento por Status<br>
+4. Agrupamento por Status<br>
 A lista separará os itens "Comprados" dos "Não Comprados", exibindo ambos em grupos distintos, mas ainda dentro da mesma página.
-[morango e kiwi como itens comprados ; e uvas como itens não comprados](https://github.com/user-attachments/assets/1f6b521a-8157-4d86-adfa-2e6e1b2fb09b).
+![Morango e kiwi como itens comprados ; e uvas como itens não comprados](https://github.com/user-attachments/assets/1f6b521a-8157-4d86-adfa-2e6e1b2fb09b | width=250)
 
-8. Exclusão de Itens<br>
+5. Exclusão de Itens<br>
 O usuário poderá excluir itens da lista com um clique, utilizando um ícone de "lixeira" ao lado de cada item.
-[Item kiwi foi excluído](https://github.com/user-attachments/assets/59887a82-e187-44d3-9236-58a14c55c990)
+![Item kiwi foi excluído](https://github.com/user-attachments/assets/59887a82-e187-44d3-9236-58a14c55c990 | width=250)
 
-9. Interface 🎨<br>
+6. Interface 🎨<br>
 A interface será minimalista e responsiva, proporcionando uma experiência de usuário fluida em diferentes dispositivos.
-![Interface responsiva - tamanho máximo de 600px](https://github.com/user-attachments/assets/ba4b4661-9fb9-4199-9a19-883545baa119)
+![Interface responsiva - tamanho máximo de 250px](https://github.com/user-attachments/assets/ba4b4661-9fb9-4199-9a19-883545baa119 | width=250)
+
 
 ## Requisitos Técnicos 🔧
 * Validação de Formulários: Implementar validações básicas para garantir que o usuário não adicione itens vazios.
