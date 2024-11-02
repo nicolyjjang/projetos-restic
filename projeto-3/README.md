@@ -46,3 +46,10 @@ A interface será minimalista e responsiva, proporcionando uma experiência de u
 
 5. Acesse no navegador <br>
 http://localhost:4200
+
+6. Caso ocorra o erro:  
+   ```bash An unhandled exception occurred: EBUSY: resource busy or locked, rmdir 'C:\Users\nicol\Documents\restic-projetos\projeto-3\lista-de-compras\.angular\cache\18.2.11\lista-de-compras\vite\deps' See "C:\Users\nicol\AppData\Local\Temp\ng-ART39A\angular-errors.log" for further details.``` 
+   
+    **Tente remover o cache manualmente:**
+    - Navegue até ``C:\Users\nicol\Documents\restic-projetos\projeto-3\lista-de-compras\.angular\cache``.
+    - Exclua a pasta `18.2.11` ou até mesmo a pasta `cache` inteira. O Angular irá recriá-la na próxima vez que você executar o projeto.
