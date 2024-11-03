@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingListService } from '../shopping-list.service';
+import { AuthService } from '../auth.service';  
+import { Router } from '@angular/router'; 
 import { CommonModule } from '@angular/common';
 
 export interface ShoppingItem {
@@ -19,7 +21,11 @@ export interface ShoppingItem {
 export class ListaDeComprasComponent implements OnInit {
   shoppingList: ShoppingItem[] = []; 
 
-  constructor(private shoppingListService: ShoppingListService) {}
+  constructor(
+    private shoppingListService: ShoppingListService,
+    private authService: AuthService,  
+    private router: Router  
+  ) {}
 
   ngOnInit() {
     this.loadShoppingList();
@@ -49,5 +55,10 @@ export class ListaDeComprasComponent implements OnInit {
         console.error('Erro ao excluir a tarefa', error);
       }
     );
+  }
+
+  logout() {
+    this.authService.logout();  // chama metodo de logout no AuthService
+    this.router.navigate(['/login']);  
   }
 }

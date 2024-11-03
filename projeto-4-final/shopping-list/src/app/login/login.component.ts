@@ -13,6 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class LoginComponent implements OnInit {
   isAuthenticated$!: Observable<boolean>; 
+  authService: any;
 
   constructor(public auth: AuthService, private router: Router) {}
 
@@ -32,8 +33,6 @@ export class LoginComponent implements OnInit {
   }
 
   logout() {
-    this.auth.logout({
-      logoutParams: { returnTo: window.location.origin },
-    });
+    this.auth.logout();
   }
 }
