@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 export interface ShoppingItem {
   id: number;
@@ -24,7 +24,7 @@ export class ShoppingListService {
           return response.json();
         })
         .then(data => {
-          observer.next(data);
+          observer.next(data); // A resposta já é a lista de tarefas
           observer.complete();
         })
         .catch(error => {
@@ -44,7 +44,7 @@ export class ShoppingListService {
       })
         .then(response => response.json())
         .then(data => {
-          observer.next(data);
+          observer.next(data); // Retorna a nova tarefa com id
           observer.complete();
         })
         .catch(error => {
@@ -81,9 +81,14 @@ export class ShoppingListService {
         },
         body: JSON.stringify(task),
       })
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Erro ao atualizar a tarefa');
+          }
+          return response.json();
+        })
         .then(data => {
-          observer.next(data);
+          observer.next(data); // Retorna a tarefa atualizada
           observer.complete();
         })
         .catch(error => {

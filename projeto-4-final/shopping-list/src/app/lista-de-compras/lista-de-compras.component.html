@@ -3,9 +3,16 @@
     <h2>Tasks</h2>
     <button class="logout-button" (click)="logout()">Logout</button>
   </div>
+  
+  <div class="add-task-container">
+    <input type="text" [(ngModel)]="newTask.title" placeholder="Nova Tarefa" />
+    <button (click)="addTask()">Adicionar</button>
+  </div>
+  
   <ul class="shopping-list">
     <li *ngFor="let item of shoppingList" class="shopping-item">
-      {{ item.title }}
+      <span>{{ item.title }}</span> 
+      <button (click)="editItem(item)">Editar</button>  
       <button (click)="deleteTask(item.id)">Excluir</button>
     </li>
   </ul>

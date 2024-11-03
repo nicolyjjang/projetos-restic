@@ -14,7 +14,7 @@ export class ErrorInterceptor implements HttpInterceptor {
 
         if (err.error instanceof ErrorEvent) {
           // erro rede
-          errorMessage = 'Um erro de rede ocorreu. Verifique sua conexão.';
+          errorMessage = 'Um erro de rede ocorreu. Por favor, verifique sua conexão.';
         } else {
           // erros servidor
           switch (err.status) {

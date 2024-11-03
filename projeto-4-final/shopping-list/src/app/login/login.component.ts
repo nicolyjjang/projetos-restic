@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  isAuthenticated$!: Observable<boolean>; 
+  isAuthenticated$!: Observable<boolean>; // Observable -> representa o estado de autenticacao (true/false)
   authService: any;
 
   constructor(public auth: AuthService, private router: Router) {}
@@ -21,9 +21,9 @@ export class LoginComponent implements OnInit {
     this.isAuthenticated$ = this.auth.isAuthenticated$;
   
     this.isAuthenticated$.subscribe((isAuthenticated) => {
-      console.log('isAuthenticated:', isAuthenticated); 
+      console.log('isAuthenticated:', isAuthenticated); // diz o estado de autenticacao
       if (isAuthenticated) {
-        this.router.navigate(['/lista']);
+        this.router.navigate(['/lista']); // redireciona para a tela de lista de compras (tasks)
       }
     });
   }  
