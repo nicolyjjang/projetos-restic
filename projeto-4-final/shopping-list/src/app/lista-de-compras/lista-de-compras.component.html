@@ -1,0 +1,8 @@
+<h1>Lista de Compras</h1>
+
+<ul>
+  <li *ngFor="let item of shoppingList">
+    {{ item.title }}
+    <button (click)="deleteTask(item.id)">Excluir</button>
+  </li>
+</ul>

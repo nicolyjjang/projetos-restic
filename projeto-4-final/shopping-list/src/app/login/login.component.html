@@ -1,0 +1,5 @@
+<h1>Bem-vindo à Página de Login</h1>
+
+<div>
+  <button *ngIf="(isAuthenticated$ | async) === false" (click)="login()">Login</button>
+</div>
