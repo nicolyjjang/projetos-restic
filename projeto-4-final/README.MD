@@ -62,33 +62,33 @@ http://localhost:4200
 Aqui está o fluxo que o usuário percorrerá ao interagir com a aplicação:
 
 * Página de Login  
-<img src="https://github.com/user-attachments/assets/14fc0d69-5216-4eb8-902e-5c9a6c953a1f" width="350px">
+<img src="https://github.com/user-attachments/assets/14fc0d69-5216-4eb8-902e-5c9a6c953a1f" width="350px"><br>
     * O usuário inicia na página de login, onde poderá fazer login usando sua conta de rede social.
 
 * Auth0 - Para fazer login com Google  
-<img src="https://github.com/user-attachments/assets/536f46eb-8f18-4b3f-bcc8-0dab122354c3" width="350px">
+<img src="https://github.com/user-attachments/assets/536f46eb-8f18-4b3f-bcc8-0dab122354c3" width="350px"><br>
     * Ao selecionar o login via Google, o usuário é redirecionado para o Auth0.
 
 * Página de Login do Google  
-<img src="https://github.com/user-attachments/assets/6b5926b6-3279-451a-8899-1ab130d328ff" width="350px">
+<img src="https://github.com/user-attachments/assets/6b5926b6-3279-451a-8899-1ab130d328ff" width="350px"><br>
     * O usuário insere suas credenciais do Google para autenticação.
 
 * Página de Alerta do Google  
-<img src="https://github.com/user-attachments/assets/867acda1-6126-4d60-b246-b6b63dd72783" width="350px">  
+<img src="https://github.com/user-attachments/assets/867acda1-6126-4d60-b246-b6b63dd72783" width="350px">  <br>
     * Se aparecer um alerta de segurança, o usuário deve clicar em "Avançado" e continuar para acessar a aplicação.
 
 * Página de Login no Serviço Auth0  
-<img src="https://github.com/user-attachments/assets/6594adaf-fb3a-4b6b-84d0-0cacad3b77c5" width="350px">
+<img src="https://github.com/user-attachments/assets/6594adaf-fb3a-4b6b-84d0-0cacad3b77c5" width="350px"><br>
     * O usuário concede as permissões necessárias para conectar sua conta à aplicação.
 
 * Permissões do Google  
-<img src="https://github.com/user-attachments/assets/d4e4abe9-8382-490d-9f2b-27a67aa0afa2" width="350px">
+<img src="https://github.com/user-attachments/assets/d4e4abe9-8382-490d-9f2b-27a67aa0afa2" width="350px"><br>
     * Após o login bem-sucedido, o usuário é redirecionado para a página principal da lista de compras, onde pode gerenciar suas tarefas.
 
 * Autorizando Conexão com a Aplicação  
-<img src="https://github.com/user-attachments/assets/e1c57416-88b4-4da3-bbd3-b299e0a348a6" width="350px">
+<img src="https://github.com/user-attachments/assets/e1c57416-88b4-4da3-bbd3-b299e0a348a6" width="350px"><br>
     * Após conceder as permissões, o usuário vê uma tela de confirmação e precisa autorizar a conexão com a aplicação. Esta autorização permite que a aplicação acesse os dados permitidos no Google.
 
 * Página da Lista de Compras Após Autenticação do Usuário  
-<img src="https://github.com/user-attachments/assets/a1ffb914-0a75-462a-b304-41e0949b9a99" width="350px">
+<img src="https://github.com/user-attachments/assets/a1ffb914-0a75-462a-b304-41e0949b9a99" width="350px"><br>
     * Com a autenticação concluída, o usuário é redirecionado para a página principal da lista de compras. Aqui, ele pode visualizar, adicionar, editar e remover itens na lista de compras de acordo com suas permissões.
