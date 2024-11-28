@@ -1,0 +1,20 @@
+<div class="search-bar">
+  <input 
+    type="text" 
+    placeholder="Pesquise vídeos..." 
+    [(ngModel)]="searchQuery" 
+    (input)="onSearch()"
+  />
+  <button (click)="onSearch()">Buscar</button>
+</div>
+
+<div class="video-cards-container">
+  <div class="video-card" *ngFor="let video of filteredVideos">
+    <img [src]="video.thumbnailUrl" alt="{{ video.title }}" />
+    <div class="video-card-content">
+      <h3>{{ video.title }}</h3>
+      <p>{{ video.description }}</p>
+      <a [routerLink]="['/video-player', video.id]" class="watch-button">Assistir Vídeo</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!-- detalhes do video, caso carregado -->
+<div id="videoPlayerContainer" *ngIf="video$ | async as video; else loading">
+  <h3>{{ video.title }}</h3>
+  <p>{{ video.description }}</p>
+
+  <video *ngIf="video" controls>
+    <source [src]="video.url" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+
+  <div class="video-detail">
+    <h4>Detalhes do Vídeo</h4>
+    <p>ID do Vídeo: {{ video.id }}</p>
+    <p>Visualizações: {{ viewCount }}</p>
+    <p>Data de Upload: {{ video.uploadAt | date: 'dd/MM/yyyy' }}</p>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Carregando...</p>
+</ng-template>

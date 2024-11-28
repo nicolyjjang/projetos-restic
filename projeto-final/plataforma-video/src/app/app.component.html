@@ -1,0 +1,19 @@
+<!-- caso esteja logado, o conteudo aparece -->
+<div *ngIf="(isAuthenticated$ | async); else loginTemplate">
+
+  <button (click)="logout()" class="logout-button">Logout</button>
+  
+  <div class="main-content">
+    <app-search></app-search>
+    <app-profile></app-profile>
+    <app-home></app-home>
+  </div>
+</div>
+
+<!-- caso nao esteja logado, aparece o login -->
+<ng-template #loginTemplate>
+  <div class="login-container">
+    <app-login></app-login>
+  </div>
+</ng-template>
+<router-outlet></router-outlet>

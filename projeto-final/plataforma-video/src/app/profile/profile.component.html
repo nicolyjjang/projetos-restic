@@ -1,0 +1,5 @@
+<div *ngIf="auth.user$ | async as user" class="profile-info">
+    <img [src]="user.picture" alt="Profile Picture" />
+    <h2>Bem-vindo, {{ user.name }}</h2>
+    <p>Email: {{ user.email }}</p>
+  </div>

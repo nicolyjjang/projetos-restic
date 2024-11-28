@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+#videoPlayerContainer {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(73, 149, 166, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Lora';
+}
+
+#videoPlayerContainer h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#videoPlayerContainer p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-detail {
+    background-color: rgba(47, 102, 115, 0.15);
+    padding: 1px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.video-detail h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.video-detail p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ng-template {
+    font-size: 1.5rem;
+    color: #888;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .video-card {
+        width: 100%;
+        height: auto;
+    }
+    .video-card img {
+        height: auto;
+        max-height: 200px;  
+    }
+    .video-card-content h3 {
+        font-size: 1rem;
+    }
+    .video-card-content p {
+        font-size: 0.9rem;
+    }
+}
