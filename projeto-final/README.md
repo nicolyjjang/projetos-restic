@@ -76,6 +76,6 @@ http://localhost:4200
 * Perfil: Informações do usuário e botão para logout.
 
 ### Imagens das Telas 📸
-<img src="https://github.com/user-attachments/assets/f331e949-e1a2-40c0-9b66-7f18953c90b8" alt="Home" width="400px" />
+<img src="https://github.com/user-attachments/assets/f331e949-e1a2-40c0-9b66-7f18953c90b8" alt="Home" width="600px" />
 
-<img src="https://github.com/user-attachments/assets/b64b596e-63b3-41ff-9492-5a1d96d49015" alt="Video-Player" width="400px" />
+<img src="https://github.com/user-attachments/assets/b64b596e-63b3-41ff-9492-5a1d96d49015" alt="Video-Player" width="600px" />
